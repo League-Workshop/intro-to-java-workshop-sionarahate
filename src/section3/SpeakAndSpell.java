@@ -6,10 +6,18 @@ import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
 public class SpeakAndSpell {
-
 	public static void main(String[] args) {
+		String word;
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
+speak("spell home");
+word=JOptionPane.showInputDialog("spell the word ");
 
+if(word.equalsIgnoreCase("home")) {
+JOptionPane.showMessageDialog(null,"good");
+}
+else {
+	JOptionPane.showMessageDialog(null, "try again");
+}
 		// 2. Catch the user's answer in a String
 
 		// 3. If the user spelled the word correctly, speak "correct"
